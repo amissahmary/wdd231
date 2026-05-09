@@ -1,4 +1,7 @@
 @media only screen and (min-width: 38rem) {
+    :root{
+        --text-color: rgb(255, 255, 255);
+    }
     header, main, nav, footer{
         max-width: 950px;
         margin: 0 auto;
@@ -28,7 +31,7 @@
 
     #sub button{
         display: inline;
-        color: white;
+        color: var(--text-color);
         padding: 10px;
         text-align: center;
     }
