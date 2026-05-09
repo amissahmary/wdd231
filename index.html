@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Mary Amissah">
+    <meta name="description" content="A simple responsive website template with a header, main content area, and footer.">
+    <title>The Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="images/house-user.svg" alt="Chamber of Commerce Logo">
+        <span>The Chamber of Commerce</span>
+        <button id="menu-toggle" class="hamburger" aria-label="menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>HOME</h1>
+        <div id="content">
+            <section class="box">
+                <h2>About Me</h2>
+                <p>My name is Mary Amissah, and I am a BSc Professional Studies student with Brigham Young University in Ghana. I am passionate about technology, creativity, leadership, and youth empowerment. I enjoy learning new things, exploring technology, writing poetry, studying the Bible, and participating in activities that inspire and support young people. I also enjoy mentoring teenagers and helping them discover their talents, build confidence, and develop valuable life skills. I am a creative and growth-oriented person who loves making meaningful connections, taking on new challenges, and using my skills and ideas to make a positive impact in my community and beyond.
+                </p>
+            </section>
+            <section class="box">
+                <h2>Student Photo</h2>
+                <img src="images/myself.jpg" alt="Mary Amissah" width="250" height="400">
+            </section>
+        </div>
+        <section id="courses">
+            <h2>Web Certificate Courses</h2>
+            <div id="main">
+                <button>ALL</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div id="sub"></div>
+            <p>The total credits for course listed above is <span id="credit"></span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://www.github.com" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+        </div>
+        <p><span id="currentYear"></span> Mary Amissah   Accra, Ghana</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

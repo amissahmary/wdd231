@@ -1,0 +1,35 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer{
+        max-width: 950px;
+        margin: 0 auto;
+    }
+    header{
+        grid-template-columns: 24px auto;
+    }
+    .hamburger{
+        display: none;
+    } 
+ 
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 20px;
+        
+    }
+
+    #content{
+        max-width: 950px;
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    #sub button{
+        display: inline;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+}
