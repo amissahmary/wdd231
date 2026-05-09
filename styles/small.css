@@ -124,6 +124,10 @@ h1{
     padding: 15px;
 }
 
+#courses{
+    text-align: center;
+}
+
 #courses h2{
     background-color: var(--secondary-color);
     color: var(--text-color);
