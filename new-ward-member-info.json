@@ -1,0 +1,28 @@
+{
+    "family name": "Smith",
+    "date of joining": "2024-05-15",
+    "number of people": 4,
+    "visited by bishopric": false,
+    "members": [
+        {
+            "name": "John Smith",
+            "gender": "male",
+            "birthday": "2000-01-01"
+        },
+        {
+            "name": "Jane Smith",
+            "gender": "female",
+            "birthday": "2002-02-02"
+        },
+        {
+            "name": "Emily Smith",
+            "gender": "female",
+            "birthday": "2005-03-03"
+        },
+        {
+            "name": "Michael Smith",
+            "gender": "male",
+            "birthday": "2008-04-04"
+        }
+    ]
+}
