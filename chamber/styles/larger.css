@@ -1,0 +1,50 @@
+@media only screen and (min-width: 38rem) {
+    :root {
+        --text-color: rgb(0, 0, 0);
+    }
+
+    header,
+    main,
+    nav,
+    footer,
+    div {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+        border-bottom: none;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    div{
+       display: flex; 
+       justify-content: left;
+       border-bottom: 1px solid var(--hover-color);
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: left;
+        padding: 15px;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        margin-top: 20px;
+        column-gap: 20px;
+    }
+}

@@ -1,0 +1,227 @@
+:root {
+    --heading-color: rgb(0, 0, 255);
+    --text-color: rgb(0, 0, 0);
+    --background-color: rgb(227, 237, 234);
+    --hover-color: rgb(7, 131, 255);
+    --hover-text-color: rgb(255, 255, 255);
+    --current-color: rgb(209, 209, 250);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nunito-sans {
+    font-family: "Nunito Sans", sans-serif;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+}
+
+h1, h2, h3, h4 {
+    color: var(--heading-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: start;
+    border-bottom: 1px solid var(--hover-color);
+    column-gap: 10px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.navigation {
+    display: none;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--heading-color);
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+}
+
+.navigation li.current {
+    background-color: var(--current-color);
+}
+
+footer{
+    padding: 10px;
+    background-color: var(--background-color);
+}
+
+footer section{
+    margin-bottom: 10px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: var(--hover-color) solid 1px;
+    border-radius: 25px;
+}
+
+.social a:hover{
+    background-color: var(--hover-color);
+}
+
+/* toggle buttons */
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 10px 20px;
+}
+
+.view-toggle button {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--hover-color);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.view-toggle button.active {
+  background: var(--hover-color);
+  color: var(--hover-text-color);
+}
+
+/* GRID layout */
+#cards.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+#cards.grid .card {
+  flex-direction: column;
+}
+
+#cards.grid .card img {
+  width: 100%;
+  height: 160px;
+}
+
+/* LIST layout */
+#cards.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 20px;
+}
+
+#cards.list .card {
+  flex-direction: row;
+}
+
+#cards.list .card img {
+  width: 100%;
+  height: auto;
+}
+
+/* shared card styles */
+.card {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.card-info a {
+  color: var(--heading-color);
+  margin-top: auto;
+  text-decoration: none;
+}
+
+details {
+  margin-top: 0.5rem;
+}
+
+summary {
+  cursor: pointer;
+  color: var(--heading-color);
+  font-weight: bold;
+  list-style: none;  /* removes default arrow if you want */
+}
+
+summary:hover {
+  text-decoration: underline;
+}
+
+details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+details p, details span, details a {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
