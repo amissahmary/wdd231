@@ -65,3 +65,6 @@ function displayMembers(companies) {
 }
 
 loadMembers();
+
+document.getElementById('btn-grid').addEventListener('click', () => setView('grid'));
+document.getElementById('btn-list').addEventListener('click', () => setView('list'));
