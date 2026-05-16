@@ -97,7 +97,7 @@ footer{
     background-color: var(--background-color);
 }
 
-footer section{
+footer div{
     margin-bottom: 10px;
 }
 
@@ -171,7 +171,7 @@ footer section{
 }
 
 #cards.list .card img {
-  width: 100%;
+  width: 100px;
   height: auto;
 }
 

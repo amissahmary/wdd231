@@ -22,7 +22,7 @@
         display: none;
     }
 
-    div{
+    .head{
        display: flex; 
        justify-content: left;
        border-bottom: 1px solid var(--hover-color);
