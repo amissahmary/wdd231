@@ -225,3 +225,137 @@ details p, details span, details a {
   margin-top: 0.3rem;
   font-size: 0.9rem;
 }
+
+/* Hero Image */
+#hero {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#home-sections {
+    display: block;
+    padding: 20px;
+}
+
+#home-sections section {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0px 0px 10px;
+}
+
+#home-sections h2 {
+    margin-top: 0;
+    text-align: center;
+    background-color: var(--current-color);
+    padding: 2px;
+    margin: 0px;
+}
+
+.spotlight { 
+  display: block; 
+  padding: 20px;
+  column-gap: 10px; 
+}
+
+.spotlight-card { 
+  border-radius: 10px; 
+  padding: 1rem; 
+  background: var(--background-color);
+  margin-bottom: 20px; 
+  text-align: center;
+}
+
+.spotlight-card__header { 
+  display: block; 
+  align-items: center; 
+  border-bottom: 1px solid var(--hover-color);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.spotlight-tagline {   
+  font-style: italic; 
+  font-size: 12px;
+  }
+
+.spotlight-details { 
+  display: flex;
+  /* flex-wrap: wrap; */
+  column-gap: 10px;
+}
+
+.spotlight-details ul { 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  text-align: left;
+}
+
+.spotlight-details a { 
+  color: var(--text-color); 
+  text-decoration: none; 
+}
+
+.spotlight-details a:hover { 
+  text-decoration: underline; 
+  color: var(--hover-color);
+}
+
+#weather-icon{
+    font-size: 4rem;
+}
+
+#wet{
+  display: flex;
+  align-items: center;
+}
+
+#forecast{
+  padding: 20px;
+}
+
+#hero-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#hero-overlay {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+}
+
+#hero-cta-btn {
+    display: inline-block;
+    background: var(--background-color);      
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;     
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 3px solid var(--hover-color);  
+    box-shadow: 0 4px 15px var(--text-color); 
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+#hero-cta-btn:hover {
+    background: var(--hover-color);
+    color: var(--hover-text-color);      
+    transform: scale(1.05);    
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+#hero-cta-btn:active {
+    transform: scale(0.98);  
+}

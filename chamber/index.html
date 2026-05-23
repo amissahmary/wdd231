@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mary Amissah">
+    <meta name="description" content="Explore the home page of The Chamber of Commerce. Find businesses and organizations in various industries that are part of our community.">
+    <meta property="og:title" content="Home Page - The Chamber of Commerce">
+    <meta property="og:description"
+        content="Welcome to the home page of The Chamber of Commerce. Learn about our organization and the businesses and professionals in our community.">
+    <meta property="og:image" content="https://amissahmary.github.io/wdd231/chamber/images/home-preview.png">
+    <meta property="og:url" content="https://amissahmary.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/members.js"></script>
+    <script defer src="scripts/members-spotlight.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <title>Home - The Chamber of Commerce</title>
+</head>
+<body>
+    <div class="head">
+        <header>
+            <img src="images/career-growth.svg" alt="Chamber of Commerce Logo">
+            <span>The Chamber of Commerce</span>
+            <button id="menu-toggle" class="hamburger" aria-label="menu"></button>
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div id="hero-wrapper">
+            <img id="hero" src="images/home-banner.jpg" alt="Chamber of Commerce Banner">
+            <div id="hero-overlay">
+                <a href="join.html" id="hero-cta-btn">Join the Chamber</a>
+            </div>
+        </div>
+        <h1>Home</h1>
+        <div id="home-sections">
+            <section>
+                <h2>Events</h2>
+            </section>
+            <section>
+                <h2>Current Weather</h2>
+                <div id="weather-card">
+                    <div id="wet">
+                        <span id="weather-icon">--</span>
+                        <div>
+                            <p id="weather-temp">--</p>
+                            <p id="weather-desc">--</p>
+                        </div>
+                    </div>
+                    <div id="weather-details">
+                        <p id="weather-high">--</p>
+                        <p id="weather-low">--</p>
+                        <p id="weather-humidity">--</p>
+                        <p id="weather-sunrise">--</p>
+                        <p id="weather-sunset">--</p>
+                    </div>
+                    <p id="weather-error"></p>
+                </div>
+            </section>
+            <section>
+                <h2>Weather Forecast</h2>
+                <div id="forecast">
+                <p id="forecast-day-0"><span class="label"></span> <span class="f-temp"></span></p>
+                <p id="forecast-day-1"><span class="label"></span> <span class="f-temp"></span></p>
+                <p id="forecast-day-2"><span class="label"></span> <span class="f-temp"></span></p>
+                </div>
+            </section>
+        </div>
+        <span id="com-spotlight"></span>
+    </main>
+    <footer>
+        <div>
+            <p><b>Miotso Chamber of Commerce</b></p>
+            <p>P.O. Box 12345, Miotso, Ghana</p>
+            <p>123 Business Avenue, Miotso, Ghana</p>
+            <p>info@miotsochamber.com</p>
+            <p>+233 123 456 789</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/miotsochamber" target="_blank" rel="noopener"><img src="images/facebook.svg" alt="Facebook account"></a>
+            <a href="https://www.github.com/miotsochamber" target="_blank" rel="noopener"><img src="images/github.svg" alt="Github account"></a>
+            <a href="https://www.linkedin.com/company/miotsochamber" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn account"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Mary Amissah</p>
+            <p><span id="currentYear"></span> Miotso Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
