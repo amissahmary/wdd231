@@ -65,4 +65,9 @@
         flex: 1 1 200px;
     }
 
+    .cards-grid { 
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px;
+    }
+
 }

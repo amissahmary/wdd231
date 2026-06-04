@@ -359,3 +359,109 @@ details p, details span, details a {
 #hero-cta-btn:active {
     transform: scale(0.98);  
 }
+
+.form-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2.5rem 2rem;
+    }
+    .form-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: .75rem;
+      border-bottom: 2px solid var(--gold);
+    }
+ 
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+
+     label {
+      display: flex;
+      flex-direction: column;
+      gap: .35rem;
+      margin-bottom: 1.2rem;
+    }
+    label .field-label {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text-color);
+    }
+    label .field-label .req { 
+      color: var(--text-color); 
+      margin-left: 2px; }
+ 
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: .65rem .9rem;
+      border: 1.5px solid var(--hover-color);
+      border-radius: 6px;
+      font-size: .97rem;
+      color: var(--text-color);
+      background: var(--hover-text-color-color);
+      transition: border-color .2s, box-shadow .2s;
+      outline: none;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--hover-color);
+      background: var(--background-color);
+    }
+    input:invalid:not(:placeholder-shown) { 
+      border-color: var(--text-color);}
+ 
+    select { cursor: pointer; appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7b8d' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right .9rem center;
+      padding-right: 2.2rem;
+    }
+ 
+    textarea { resize: vertical; min-height: 110px; }
+ 
+    .full-width { grid-column: 1 / -1; }
+ 
+    input[type="submit"] {
+      margin-top: .5rem;
+      background: var(--hover-color);
+      color: var(--hover-text-color);
+      border: none;
+      padding: .9rem 2.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .2s, transform .12s;
+    }
+    input[type="submit"]:hover { 
+      background: var(--background-color); 
+      transform: translateY(-1px); 
+      color: var(--text-color);
+    }
+    input[type="submit"]:active { 
+      transform: translateY(0); }
+
+.membership-card {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.cards-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}

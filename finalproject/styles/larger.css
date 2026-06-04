@@ -1,0 +1,25 @@
+@media only screen and (min-width: 38rem) {
+    :root{
+        --text-color: rgb(255, 255, 255);
+    }
+    header, main, nav, footer{
+        max-width: 950px;
+        margin: 0 auto;
+    }
+    header{
+        grid-template-columns: 24px auto;
+    }
+    .hamburger{
+        display: none;
+    } 
+ 
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 20px;
+        
+    }
+}

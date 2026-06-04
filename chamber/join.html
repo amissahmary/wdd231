@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mary Amissah">
+    <meta name="description" content="A membership application form for a prospective member. ">
+    <meta property="og:title" content="Join Page - The Chamber of Commerce">
+    <meta property="og:description"
+        content="Welcome to the join page of The Chamber of Commerce. Apply for membership and connect with other businesses in our community.">
+    <meta property="og:image" content="https://amissahmary.github.io/wdd231/chamber/images/join-preview.png">
+    <meta property="og:url" content="https://amissahmary.github.io/wdd231/chamber/join.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <title>Join - The Chamber of Commerce</title>
+</head>
+<body>
+    <div class="head">
+        <header>
+            <img src="images/career-growth.svg" alt="Chamber of Commerce Logo">
+            <span>The Chamber of Commerce</span>
+            <button id="menu-toggle" class="hamburger" aria-label="menu"></button>
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Join the Chamber</h1>
+        <div class="form-card">
+            <h3>Membership Application</h3>
+            <form method="get" action="thankyou.html" id="memberForm" novalidate>
+ 
+            <div class="form-row">
+                <label>
+                    <span class="field-label">First Name <span class="req">*</span></span>
+                    <input type="text" name="fname" title="Applicant's first name" autocomplete="given-name" placeholder="Jane" required/>
+                </label>
+                <label>
+                    <span class="field-label">Last Name <span class="req">*</span></span>
+                    <input type="text" name="lname" title="Applicant's last name" autocomplete="family-name" placeholder="Smith" required/>
+                </label>
+                <label class="full-width">
+                    <span class="field-label">Organizational Title</span>
+                    <input type="text" name="org-title" title="Applicant's title or role within their organization" autocomplete="organization-title" placeholder="e.g. Director of Marketing" pattern="[A-Za-z\- ]{7,}"/>
+                </label>
+                <label class="full-width">
+                    <span class="field-label">Email Address <span class="req">*</span></span>
+                    <input type="email" name="email" title="Applicant's business email address" autocomplete="email" placeholder="jane.smith@example.com" required/>
+                </label>
+                <label>
+                    <span class="field-label">Mobile Phone <span class="req">*</span></span>
+                    <input type="tel" name="mobile" title="Applicant's mobile phone number" autocomplete="tel" placeholder="+1 555 000 0000" required/>
+                </label>
+                <label>
+                    <span class="field-label">Business / Organization Name <span class="req">*</span></span>
+                    <input type="text" name="org" title="Name of the applicant's business or organization" autocomplete="organization" placeholder="Acme Corporation" required/>
+                </label>
+                <label class="full-width">
+                    <span class="field-label">Membership Level <span class="req">*</span></span>
+                    <select name="membership" title="Select a membership level" required>
+                        <option value="" disabled selected>— Select a level —</option>
+                        <option value="np">NP Membership (Non-Profit – No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label class="full-width">
+                    <span class="field-label">Business / Organization Description</span>
+                    <textarea name="description" title="Brief description of the business or organization" placeholder="Tell us a little about what your organization does…"
+                    ></textarea>
+                </label>
+            </div>
+            <input type="submit" value="Submit Application" title="Submit the membership application form" />
+        </form>
+
+        </div>
+            <aside class="membership-sidebar">
+                <h3>Membership Levels</h3>
+                <div class="cards-grid">
+ 
+                    <div class="membership-card card-np">
+                        <span class="card-badge">Non-Profit</span>
+                        <h4>NP Membership</h4>
+                        <p class="card-fee">No fee</p>
+                        <a href="#" class="info-link" data-modal="modal-np">Learn more →</a>
+                    </div>
+                
+                    <div class="membership-card card-bronze">
+                        <span class="card-badge">Bronze</span>
+                        <h4>Bronze Membership</h4>
+                        <p class="card-fee">Starting tier</p>
+                        <a href="#" class="info-link" data-modal="modal-bronze">Learn more →</a>
+                    </div>
+ 
+                    <div class="membership-card card-silver">
+                        <span class="card-badge">Silver</span>
+                        <h4>Silver Membership</h4>
+                        <p class="card-fee">Enhanced benefits</p>
+                        <a href="#" class="info-link" data-modal="modal-silver">Learn more →</a>
+                    </div>
+                
+                    <div class="membership-card card-gold">
+                        <span class="card-badge">Gold</span>
+                        <h4>Gold Membership</h4>
+                        <p class="card-fee">Premium tier</p>
+                        <a href="#" class="info-link" data-modal="modal-gold">Learn more→</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p><b>Miotso Chamber of Commerce</b></p>
+            <p>P.O. Box 12345, Miotso, Ghana</p>
+            <p>123 Business Avenue, Miotso, Ghana</p>
+            <p>info@miotsochamber.com</p>
+            <p>+233 123 456 789</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/miotsochamber" target="_blank" rel="noopener"><img src="images/facebook.svg" alt="Facebook account"></a>
+            <a href="https://www.github.com/miotsochamber" target="_blank" rel="noopener"><img src="images/github.svg" alt="Github account"></a>
+            <a href="https://www.linkedin.com/company/miotsochamber" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn account"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Mary Amissah</p>
+            <p><span id="currentYear"></span> Miotso Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
