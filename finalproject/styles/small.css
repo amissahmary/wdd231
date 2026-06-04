@@ -1,9 +1,9 @@
 :root{
-    --primary-color: rgb(255, 0, 0);
+    --primary-color: rgb(8, 8, 8);
     --secondary-color: rgb(255, 255, 0);
-    --hover-bg-color: rgb(255, 0, 0);
+    --hover-bg-color: rgb(161, 107, 107);
     --hover-text-color: rgb(252, 252, 252);
-    --background-color2: rgb(0, 0, 0);
+    --background-color2: rgb(252, 242, 242);
 }
 
 
@@ -39,7 +39,6 @@ header img {
 
 header span{
     font-size: 1.2rem;
-    color: var(--primary-color);
 }
 
 /* Navigation */
@@ -92,7 +91,7 @@ header span{
 
 /* footer */
 footer{
-    background-color: var(--background-color2);
+    background-color: var(--primary-color);
     color: var(--hover-text-color);
     text-align: center;
     padding: 1rem 10px;
