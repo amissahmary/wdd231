@@ -465,3 +465,63 @@ details p, details span, details a {
   grid-template-columns: 1fr 1fr;
   gap: 5px;
 }
+    .summary-card .card-header {
+      background: var(--background-color);
+      padding: 10px;
+      align-items: center; 
+      gap: .75rem;
+    }
+
+    .field-block { 
+      display: flex; 
+      flex-direction: column; 
+      gap: .25rem; 
+    }
+
+    .field-block dt {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .field-block dd {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .divider {
+      grid-column: 1 / -1;
+      height: 1px;
+    }
+
+    /* ── Next steps ───────────────────────────────────── */
+    .next-steps {
+      margin-top: 2rem;
+      border: 2px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.5rem;
+    }
+    .next-steps h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      margin-bottom: .8rem;
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .next-steps ol {
+      padding-left: 1.2rem;
+      display: flex; flex-direction: column; gap: .5rem;
+      font-size: .95rem; color: #333;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1.8rem;
+      font-weight: 700;
+      font-size: .85rem;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding-bottom: 2px;
+      transition: opacity .15s;
+    }
+    .back-link:hover { opacity: .65; }

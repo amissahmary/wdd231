@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mary Amissah">
+    <meta name="description" content="A thank you page for a prospective member who has applied for membership.">
+    <meta property="og:title" content="Thank You - The Chamber of Commerce">
+    <meta property="og:description"
+        content="Thank you for applying for membership at The Chamber of Commerce. We will review your application and get back to you soon.">
+    <meta property="og:image" content="https://amissahmary.github.io/wdd231/chamber/images/thank-you-preview.png">
+    <meta property="og:url" content="https://amissahmary.github.io/wdd231/chamber/thank_you.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/thankyou.js"></script>
+    <title>Thank You - The Chamber of Commerce</title>
+</head>
+
+<body>
+    <div class="head">
+        <header>
+            <img src="images/career-growth.svg" alt="Chamber of Commerce Logo">
+            <span>The Chamber of Commerce</span>
+            <button id="menu-toggle" class="hamburger" aria-label="menu"></button>
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Thank You for Joining the Chamber!</h1>
+        <div class="summary-card" id="summaryCard">
+            <div class="card-header">
+            <h2>Application Summary</h2>
+            </div>
+            <dl class="summary-body" id="summaryBody">
+            <!-- Populated by JS -->
+            </dl>
+        </div>
+         <div class="next-steps">
+            <h3>📋 What Happens Next?</h3>
+            <ol>
+            <li>Our membership team will review your application within 2–3 business days.</li>
+            <li>You'll receive a confirmation email with your membership details.</li>
+            <li>Once approved, you'll gain access to all member resources and benefits.</li>
+            </ol>
+        </div>
+        <a href="join.html" class="back-link">← Back to Application</a>
+    </main>
+    <footer>
+        <div>
+            <p><b>Miotso Chamber of Commerce</b></p>
+            <p>P.O. Box 12345, Miotso, Ghana</p>
+            <p>123 Business Avenue, Miotso, Ghana</p>
+            <p>info@miotsochamber.com</p>
+            <p>+233 123 456 789</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/miotsochamber" target="_blank" rel="noopener"><img src="images/facebook.svg" alt="Facebook account"></a>
+            <a href="https://www.github.com/miotsochamber" target="_blank" rel="noopener"><img src="images/github.svg" alt="Github account"></a>
+            <a href="https://www.linkedin.com/company/miotsochamber" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn account"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Mary Amissah</p>
+            <p><span id="currentYear"></span> Miotso Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

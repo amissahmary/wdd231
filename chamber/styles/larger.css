@@ -70,4 +70,8 @@
         gap: 10px;
     }
 
+    .summary-body { 
+        grid-template-columns: 1fr; 
+    }
+
 }
