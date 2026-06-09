@@ -1,6 +1,7 @@
 :root{
     --primary-color: rgb(8, 8, 8);
     --secondary-color: rgb(255, 255, 0);
+    --tertiary-color: rgb(255, 0, 0);
     --hover-bg-color: rgb(183, 58, 58);
     --hover-text-color: rgb(252, 252, 252);
     --background-color2: rgb(252, 242, 242);
@@ -47,7 +48,7 @@ header span{
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 .hamburger::before{
