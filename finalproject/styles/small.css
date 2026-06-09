@@ -1,7 +1,7 @@
 :root{
     --primary-color: rgb(8, 8, 8);
     --secondary-color: rgb(255, 255, 0);
-    --hover-bg-color: rgb(161, 107, 107);
+    --hover-bg-color: rgb(183, 58, 58);
     --hover-text-color: rgb(252, 252, 252);
     --background-color2: rgb(252, 242, 242);
 }
@@ -91,8 +91,8 @@ header span{
 
 /* footer */
 footer{
-    background-color: var(--primary-color);
-    color: var(--hover-text-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     text-align: center;
     padding: 1rem 10px;
 }
@@ -109,10 +109,10 @@ footer{
     align-items: center;
     width: 44px;
     height: 44px;
-    border: var(--secondary-color) solid 1px;
+    border: var(--primary-color) solid 1px;
     border-radius: 5px;
 }
 
 .social a:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--hover-text-color);
 }
