@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
     :root {
         --text-color: rgb(0, 0, 0);
     }
@@ -74,4 +74,7 @@
         grid-template-columns: 1fr; 
     }
 
+    #attractions.main {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

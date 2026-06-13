@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mary Amissah">
+    <meta name="description"
+        content="Explore the discover page of The Chamber of Commerce. Find businesses and organizations in various industries that are part of our community.">
+    <meta property="og:title" content="Discover Page - The Chamber of Commerce">
+    <meta property="og:description"
+        content="Welcome to the discover page of The Chamber of Commerce. Learn about our organization and the businesses and professionals in our community.">
+    <meta property="og:image" content="https://amissahmary.github.io/wdd231/chamber/images/home-preview.png">
+    <meta property="og:url" content="https://amissahmary.github.io/wdd231/chamber/discover.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script src="scripts/attractions.js" type="module"></script>
+    <title>Discover - The Chamber of Commerce</title>
+</head>
+
+<body>
+    <div class="head">
+        <header>
+            <img src="images/career-growth.svg" alt="Chamber of Commerce Logo">
+            <span>The Chamber of Commerce</span>
+            <button id="menu-toggle" class="hamburger" aria-label="menu"></button>
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Discover</h1>
+        <p>Explore the amazing attractions in our community!</p>
+        <div id="visit-message"></div>
+        <div id="attractions" class="main"></div>
+    </main>
+    <footer>
+        <div>
+            <p><b>Miotso Chamber of Commerce</b></p>
+            <p>P.O. Box 12345, Miotso, Ghana</p>
+            <p>123 Business Avenue, Miotso, Ghana</p>
+            <p>info@miotsochamber.com</p>
+            <p>+233 123 456 789</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/miotsochamber" target="_blank" rel="noopener"><img
+                    src="images/facebook.svg" alt="Facebook account"></a>
+            <a href="https://www.github.com/miotsochamber" target="_blank" rel="noopener"><img src="images/github.svg"
+                    alt="Github account"></a>
+            <a href="https://www.linkedin.com/company/miotsochamber" target="_blank" rel="noopener"><img
+                    src="images/linkedin.svg" alt="LinkedIn account"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Mary Amissah</p>
+            <p><span id="currentYear"></span> Miotso Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
