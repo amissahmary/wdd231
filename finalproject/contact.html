@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mary Amissah">
+    <meta name="description"
+        content="The home page of The Levite Generation website, providing information about the organization, its mission, and its activities.">
+    <title>Contact - The Levite Generation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Contact - The Levite Generation">
+    <meta property="og:description" content="Get in touch with The Levite Generation. We'd love to hear from you!">
+    <meta property="og:image" content="images/contact-preview.png">
+    <meta property="og:url" content="contact.html">
+</head>
+
+<body>
+    <header>
+        <img src="images/ballet-dance.svg" alt="The Levite Generation Logo">
+        <span>The Levite Generation</span>
+        <button id="menu-toggle" class="hamburger" aria-label="menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact-section">
+            <h1>Join or Support The Ministry</h1>
+            <p>If you are interested in supporting our work or joining the ministry, please complete the form below so
+                we can connect with you.</p>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+233 24 123 4567" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="City, Region" required>
+
+                <label for="interest-type">I am interested in:</label>
+                <select id="interest-type" name="interest-type" required>
+                    <option value="">Choose one</option>
+                    <option value="support">Supporting the ministry</option>
+                    <option value="join">Joining the ministry</option>
+                    <option value="volunteer">Volunteering</option>
+                    <option value="partner">Partnership opportunities</option>
+                </select>
+
+                <label for="interest-area">Area of Interest:</label>
+                <textarea id="interest-area" name="interest-area" rows="4"
+                    placeholder="Tell us how you would like to help or get involved." required></textarea>
+
+                <label for="availability">Availability:</label>
+                <input type="text" id="availability" name="availability"
+                    placeholder="e.g. Weekends, evenings, specific dates">
+
+                <label for="hear-about">How did you hear about us?</label>
+                <input type="text" id="hear-about" name="hear-about" placeholder="Friend, social media, church, etc.">
+
+                <label for="message">Additional Message:</label>
+                <textarea id="message" name="message" rows="4"
+                    placeholder="Any other details you'd like us to know."></textarea>
+
+                <h2><a href="thankyou.html"><button type="submit">Submit Interest</button></a></h2>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3><i>LG!!! SAVED TO SAVE!!</i></h3>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.whatsapp.com/in/maryamissah995a" target="_blank"><img src="images/whatsapp.svg"
+                    alt="WhatsApp"></a>
+            <a href="https://instagram.com/dashboard" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram"></a>
+        </div>
+        <p><span id="currentYear"></span> Mary Amissah Accra, Ghana</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

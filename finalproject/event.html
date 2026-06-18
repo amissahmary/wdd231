@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mary Amissah">
+    <meta name="description"
+        content="The events page of The Levite Generation website, providing information about upcoming events, past events, and success stories.">
+    <title>Events - The Levite Generation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/testimonies.js"></script>
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Events - The Levite Generation">
+    <meta property="og:description"
+        content="Discover upcoming events, past celebrations, and success stories from The Levite Generation community.">
+    <meta property="og:image" content="images/event-preview.png">
+    <meta property="og:url" content="event.html">
+</head>
+
+<body>
+    <header>
+        <img src="images/ballet-dance.svg" alt="The Levite Generation Logo">
+        <span>The Levite Generation</span>
+        <button id="menu-toggle" class="hamburger" aria-label="menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="event.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Events & Success Stories</h1>
+            <p>Explore our upcoming events, look back at past activities, and read how The Levite Generation is helping youth succeed.</p>
+        </section>
+        <h2>Upcoming Events</h2>
+        <div class="events-section" id="upcoming-events">
+            <article class="event-card">
+                <h3>Leadership Workshop</h3>
+                <img src="images/UP1.webp" alt="Leadership Workshop" loading="lazy">
+                <p><strong>Date:</strong> July 20, 2026</p>
+                <p><strong>Location:</strong> Community Hall, Accra</p>
+                <p>Join us for a full-day workshop designed to build leadership confidence, teamwork skills, and career readiness support.</p>
+                <p><a href="event-details.html">Register</a></p>
+            </article>
+            <article class="event-card">
+                <h3>Youth Inspiration Night</h3>
+                <img src="images/UP2.webp" alt="Youth Inspiration Night" loading="lazy">
+                <p><strong>Date:</strong> August 5, 2026</p>
+                <p><strong>Location:</strong> The Levite Center</p>
+                <p>An evening of motivational stories, creative performances, and opportunities to connect with mentors and peers.</p>
+                <p><a href="event-details.html">Register</a></p>
+            </article>
+        </div>
+        <h2>Past Events</h2>
+        <div class="events-section" id="past-events">
+            <article class="event-card">
+                <h3>Community Skillshare</h3>
+                <img src="images/PE1.webp" alt="Community Skillshare" loading="lazy">
+                <p><strong>Date:</strong> May 10, 2026</p>
+                <p>Participants learned new digital skills, made connections, and received resources for job searching and self-development.</p>
+                <p><a href="event-details.html">View Highlights</a></p>
+            </article>
+            <article class="event-card">
+                <h3>Health & Wellness Fair</h3>
+                <img src="images/PE2.webp" alt="Health Fair picture" loading="lazy">
+                <p><strong>Date:</strong> April 2, 2026</p>
+                <p>This event brought local health professionals, fitness trainers, and counselors together to support our community's wellbeing.</p>
+                <p><a href="event-details.html">View Highlights</a></p>
+            </article>
+        </div>
+
+        <section id="testimonies-section">
+            <h2>Testimonies</h2>
+            <div id="testimonies-container"></div>
+            <button id="refresh-btn" onclick="displayTestimonies()">See More Testimonies</button>
+        </section>
+    </main>
+    <footer>
+        <h3><i>LG!!! SAVED TO SAVE!!</i></h3>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.whatsapp.com/in/maryamissah995a" target="_blank"><img src="images/whatsapp.svg"
+                    alt="WhatsApp"></a>
+            <a href="https://instagram.com/dashboard" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram"></a>
+        </div>
+        <p><span id="currentYear"></span> Mary Amissah Accra, Ghana</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

@@ -4,9 +4,10 @@
     --tertiary-color: rgb(255, 0, 0);
     --hover-bg-color: rgb(183, 58, 58);
     --hover-text-color: rgb(252, 252, 252);
+    --background-color: rgb(255, 249, 172);
     --background-color2: rgb(252, 242, 242);
+    --button-color: rgb(0, 0, 255);
 }
-
 
 .nunito-sans{
   font-family: "Nunito Sans", sans-serif;
@@ -116,4 +117,194 @@ footer{
 
 .social a:hover{
     background-color: var(--hover-text-color);
+}
+
+.content{
+    padding: 10px;
+}
+
+.content aside{
+    background-color: var(--background-color);
+    padding: 10px;
+}
+
+.content aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content aside li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.content aside li a:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--hover-text-color);
+}
+
+.content aside li a img {
+    width: 100%;
+    height: auto;
+}
+
+.banner img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.events-section{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.event-card{
+    background-color: var(--background-color);
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.event-card h3{
+    border-bottom: 1px solid var(--hover-bg-color);
+    margin-top: 0;
+    padding: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.event-card img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#testimonies-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 10px;
+}
+
+#testimonies-container .testimony-card {
+    display: grid;
+    grid-template-areas:
+        "image"
+        "name"
+        "testimony"
+        "role"
+        "date";
+    gap: 0.1rem;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#testimonies-container .testimony-card img {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#testimonies-container .testimony-card .text {
+    grid-area: testimony;
+    margin: 0;
+}
+
+#testimonies-container .testimony-card .name {
+    grid-area: name;
+}
+
+#testimonies-container .testimony-card .role {
+    grid-area: role;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+#testimonies-container .testimony-card .date {
+    grid-area: date;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+}
+
+#refresh-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: var(--hover-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#refresh-btn:hover {
+    background-color: var(--hover-bg-color);
+}
+
+/* Contact Page */
+.contact-section {
+    padding: 10px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--hover-bg-color);
+    border-radius: 5px;
+    font-size: 0.95rem;
+    background-color: var(--background-color2);
+    color: var(--primary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--tertiary-color);
+    background-color: var(--background-color);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: var(--tertiary-color);
+    color: var(--hover-text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: var(--hover-bg-color);
 }

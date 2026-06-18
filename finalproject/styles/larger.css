@@ -22,4 +22,48 @@
         gap: 20px;
         
     }
+
+    .content{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+    }
+
+    .events-section{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #testimonies-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 10px;
+    }
+
+    #testimonies-container .testimony-card {
+        grid-template-areas:
+        "image testimony"
+        "name  testimony"
+        "role testimony"
+        "date  testimony";
+    }
+
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+        gap: 12px 20px;
+    }
+
+    .contact-form button[type="submit"] {
+        grid-column: 2 / 3;
+    }
+
 }
